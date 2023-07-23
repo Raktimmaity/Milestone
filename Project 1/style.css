@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+header{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 90px;
+    z-index: 1;
+    background: transparent;
+    position: fixed;
+}
+.menu_icon{
+    display: none;
+}
+.logo_img{
+    width: 30px;
+}
+.logo{
+    margin: 10px;
+    font-weight: bold;
+    font-size: 25px;
+}
+.logo > a{
+    text-decoration: none;
+    color: black;
+}
+ul>li{
+    display: inline-block;
+    padding: 20px;
+}
+
+ul > li > a{
+    text-decoration: none;
+    color: grey;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: all .2s ease-in-out;
+}
+ul > li > a:hover{
+    border-bottom: 5px solid orangered;
+    color: orangered;
+}
+.acc{
+    display: none;
+}
+.active{
+    color: orangered;
+}
+
+.btn{
+    margin: 10px;
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    width: 100px;
+    background: transparent;
+    font-weight: bold;
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: all .2s ease-in-out;
+}
+.btn:hover{
+    background-color: orangered;
+    color: white;
+    border: 0;
+}
+main{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    z-index: 0;
+}
+
+.left{
+    width: 60%;
+    background-color: #f3f3f3;
+    height: auto;
+    padding: 150px 90px;
+}
+
+
+.left > h1{
+    font-size: 70px;
+    padding: 10px 0px;
+}
+
+.left > p{
+    width: 80%;
+    font-size: 18px;
+    margin-top: 20px;
+    padding: 10px 15px;
+    border-left: 1px solid black;
+}
+
+.left_btn{
+    margin-top: 20px;
+    padding: 20px 0px;
+    display: flex;
+    gap: 30px;
+}
+
+.btn_st{
+    padding: 15px;
+    width: 120px;
+}
+
+.l_btn{
+    background-color: orangered;
+    border: 0;
+    color: white;
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: all .2s ease-in-out;
+}
+.l_btn:hover{
+    color: orangered;
+    background-color: transparent;
+    border: 1px solid black;
+}
+.r_btn{
+    background-color: white;
+    border: 1px solid black;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+.r_btn:hover{
+    color: white;
+    background-color: black;
+    border: 0;
+}
+.right{
+    padding: 150px 30px;
+    width: 45%;
+    height: 50vh;
+}
+.main_bg{
+    position: absolute;
+    padding: 20px;
+}
+.img_man{
+    position: relative;
+    top: 78px;
+    left: 90px;
+    width: 1px;
+}
+.ig_patt{
+    position: relative;
+    top: -400px;
+    width: 1px;
+}
+.img_circle{
+    position: relative;
+    top: -450px;
+    left: 480px;
+    width: 1px;
+}
+.img_curve_arrow{
+    position: relative;
+    display: flex;
+    justify-content: end;
+    mix-blend-mode: darken;
+    top: -50px;
+}
+.img_o_arrow{
+    position: relative;
+    left: 650px;
+}
+.img_g_arrow{
+    position: relative;
+    top: -400px;
+}
+
+.container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: #22133b;
+}
+
+.left_cont{
+    width: 30%;
+    margin-top: 70px;
+    padding: 0px 90px;
+}
+.left_cont > h1{
+    color: white;
+    line-height: 50px;
+}
+
+.left_cont > p{
+    color: white;
+    line-height: 20px;
+    padding: 20px 0px 80px 0px;
+}
+
+.right_cont{
+    width: 70%;
+    display: flex;
+    gap: 20px;
+    padding: 0px 90px;
+    margin-top: 70px;
+}
+
+.vector{
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    display: flex;
+    border-radius: 5px;
+}
+.grn{
+    background-color: #56e697;
+}
+.ong{
+    background-color: orange;
+}
+.bl{
+    background-color: #164af1;
+}
+.card > h2{
+    color: white;
+    padding: 50px 0px 20px 0px;
+}
+
+.card > p{
+    color: white;
+}
+
+
+@media screen and (max-width: 612px) {
+    ul{
+        display: none;
+    }
+    .menu_icon{
+        display: inline-block;
+    }
+    .right{
+        display: none;
+    }
+    .left{
+        width: 100%;
+    }
+    .img_curve_arrow{
+        display: none;
+    }
+    .img_o_arrow{
+        display: none;
+    }
+    .left > h1{
+        font-size: 20px;
+    }
+    .container{
+        width: 100%;
+        display: block;
+    }
+    .left_cont{
+        width: 100%;
+    }
+    .right_cont{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 476px) {
+    .logo{
+        font-size: 15px;
+    }
+}
